@@ -8,7 +8,6 @@
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
 #import "MySchemeHandler.h"
-#import "XLWKWebView.h"
 @interface ViewController ()
 @property (strong, nonatomic) WKWebView *webView;
 @property(nonatomic,strong)MySchemeHandler *webHandler;
