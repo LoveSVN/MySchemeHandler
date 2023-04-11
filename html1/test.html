@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#CA4B46">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#CA4B46">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Document</title>
+    <style>
+        div,head,html,body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .nav{
+            height:100px;
+            padding-top: 59px;
+            background-color: #CA4B46;
+        }
+        
+    </style>
+    <script>
+        function sendQuest(){
+            console.log("ssssss");
+            var reqt = new XMLHttpRequest();
+            reqt.open("POST", "http://www.appfor.cn/getIp.php", false);
+            reqt.send("ceshi");
+            console.log(reqt.responseText);
+        }
+    </script>
+
+</head>
+<body>
+    <div class="nav"></div>
+    <button onclick="sendQuest()" name="sendquest">sendquest</button>
+</body>
+</html>
