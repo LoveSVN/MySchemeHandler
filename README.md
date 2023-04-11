@@ -4,4 +4,4 @@
 ![contents](./WechatIMG3.png)
 ![contents](./WechatIMG4.png)
 ![contents](./WechatIMG5.png)
-![contents](./WechatIMG6.png)
+![contents](./WechatIMG6.jpeg)
