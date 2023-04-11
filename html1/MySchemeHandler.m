@@ -26,13 +26,12 @@
 
 - (void)webView:(nonnull WKWebView *)webView startURLSchemeTask:(nonnull id<WKURLSchemeTask>)urlSchemeTask {
 
-    
-
     NSLog(@"拦截到请求的URL：%@", urlSchemeTask.request.URL);
     NSString *localFileName = [urlSchemeTask.request.URL lastPathComponent];
     
-    if([localFileName isEqualToString:@"dongbeiLog.php"]){
-        
+    
+    if([localFileName isEqualToString:@"getIp.php"]){
+        //拦截到的 http的XMLHttpRequest的异步请求
         NSURLSessionDataTask *session = [[NSURLSession sharedSession] dataTaskWithRequest:urlSchemeTask.request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             
             [urlSchemeTask didReceiveResponse:response];

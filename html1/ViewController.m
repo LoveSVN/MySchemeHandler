@@ -26,8 +26,6 @@
     self.webView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:webViewConfiguration];
     [self.webView loadRequest:request];
     [self.view addSubview:self.webView];
-    
-    
 }
 
 @end

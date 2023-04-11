@@ -19,12 +19,12 @@
 CHDeclareClass(WKWebView)
 CHClassMethod1(BOOL, WKWebView, handlesURLScheme, NSString *, urlScheme) {
     
-    if([urlScheme isEqualToString:@"myScheme"] || [urlScheme isEqualToString:@"http"] || [urlScheme isEqualToString:@"https"]) {
+    if([urlScheme isEqualToString:@"http"] || [urlScheme isEqualToString:@"https"]) {
         
         return NO;
     }
     
-    return YES;
+    return CHSuper1(WKWebView, handlesURLScheme, urlScheme);
 }
 __attribute__((constructor())) static void entry3() {
     
